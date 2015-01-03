@@ -17,12 +17,11 @@
   },
   "author": "Yaniv Kessler",
   "bugs": {
-    "url": "https://github.com/kessler/remote-syncer/issues"
+    "url": "https://github.com/kessler/node-remote-syncer/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kessler/remote-syncer"
+    "url": "https://github.com/kessler/node-remote-syncer"
   },
-  "homepage": "https://github.com/kessler/remote-syncer",
-  "license": "MIT"
+  "homepage": "https://github.com/kessler/node-remote-syncer"
 }
