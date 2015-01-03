@@ -1,6 +1,5 @@
 var sinker = require('sinker')
 var config = require('./config.js')
-var sniffer = require('emitter-sniffer')
 
 var sourceSink = sinker(config.source, { write: false, watch: false })
 sourceSink.on('ops', print('source: '))
