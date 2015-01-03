@@ -1,0 +1,28 @@
+{
+  "name": "remote-syncer",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "dependencies": {
+    "darkmagic": "^3.2.11",
+    "ncp": "^1.0.1",
+    "nssocket": "^0.5.3",
+    "rc": "^0.5.4",
+    "rimraf": "^2.2.8",
+    "sinker": "^2.0.0",
+    "watch": "^0.13.0"
+  },
+  "author": "Yaniv Kessler",
+  "bugs": {
+    "url": "https://github.com/kessler/remote-syncer/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kessler/remote-syncer"
+  },
+  "homepage": "https://github.com/kessler/remote-syncer",
+  "license": "MIT"
+}
