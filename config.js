@@ -1,6 +1,6 @@
 var rc = require('rc')
 
-module.exports = rc('syncer', {
+module.exports = rc('remote-syncer', {
 	target: 'c:\\somewhere',
 	source: 'z:\\somewhere',
 	remoteSource: '/somewhere',
