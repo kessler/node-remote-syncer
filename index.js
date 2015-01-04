@@ -11,8 +11,15 @@ function main(watch, config, rimraf, ncp, nssocket, fs, rebase, runSync) {
 
 		connection.data(['overwrite'], function (file) {		
 			console.log('client overwrite')
-
 			overwrite(rebase(config.remoteSource, config.source, file))
+		})
+
+		connection.data(['delete'], function(file) {
+			var target = rebase(config.remoteSource, config.target, file)
+			console.log('deleting %s', target)
+			rimraf(target, function(err) {
+				console.log('deleted %s', target)
+			})
 		})
 	})
 

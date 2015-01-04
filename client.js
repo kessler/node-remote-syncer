@@ -25,11 +25,16 @@ function main(nssocket, config, watch) {
 
 		monitor.on('changed', overwrite)
 
-		monitor.on('removed', overwrite)
+		monitor.on('removed', deleteFile)
 	})
 
 	function overwrite(file) {
 		console.log('overwritting %s', file)
 		client.send(['overwrite'], file)
+	}
+
+	function deleteFile(file) {
+		console.log('deleting %s', file)
+		client.send(['delete'], file)	
 	}
 }
